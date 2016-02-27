@@ -21,7 +21,8 @@ HTTPCACHE_STORAGE = 'scrapyjs.SplashAwareFSCacheStorage'
 cd 到最外层文件下
 scrapy   crawl spider文件名 -o out.json -t json
 
-###############################################
+
+
 Pipeline data into MongoDB
 1. install scrapy-mongodb 
 2. change settings file:
