@@ -24,12 +24,6 @@ command run:
 cd 到最外层文件下
 scrapy   crawl spider文件名 -o out.json -t json
 
-=======
-Questions left
-1 proxy&browser
-2 custom pipeline
-
-
 =============
 #Pipeline data into MongoDB
 1. install scrapy-mongodb 
@@ -44,3 +38,8 @@ Questions left
            MONGODB_COLLECTION = 'my_items'
 
 3. off course, you need install MongoDB, create table
+
+=======
+Questions left
+1 proxy&browser
+2 custom pipeline
