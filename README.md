@@ -1,7 +1,8 @@
 # ScrapyTwitter
 Crawling twitter info Using Scrapy+Splash
-ddddd
-1.安装docker。mac 不能直接操作docker demaon, 要装 boot2docker
+
+1.安装docker。
+mac 不能直接操作docker demaon, 要装 boot2docker
 command run: docker run -it -p 8050:8050 scrapinghub/splash --max-timeout 3600
 查看ip: docker-machine ls
 然后打开浏览器 输入 Ip:8050,看到splash 网页，就可以运行spider。
@@ -23,16 +24,15 @@ scrapy   crawl spider文件名 -o out.json -t json
 
 
 
-Pipeline data into MongoDB
+#Pipeline data into MongoDB
 1. install scrapy-mongodb 
 2. change settings file:
 
-   ITEM_PIPELINES = [
-  'scrapy_mongodb.MongoDBPipeline',
-]
-
-MONGODB_URI = 'mongodb://localhost:27017'
-MONGODB_DATABASE = 'scrapy'
-MONGODB_COLLECTION = 'my_items'
+      ITEM_PIPELINES = [
+      'scrapy_mongodb.MongoDBPipeline',
+      ]
+      MONGODB_URI = 'mongodb://localhost:27017'
+      MONGODB_DATABASE = 'scrapy'
+      MONGODB_COLLECTION = 'my_items'
 
 3. off course, you need install MongoDB, create table
