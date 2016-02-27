@@ -24,6 +24,11 @@ command run:
 cd 到最外层文件下
 scrapy   crawl spider文件名 -o out.json -t json
 
+=======
+Questions left
+1 proxy&browser
+2 custom pipeline
+
 
 =============
 #Pipeline data into MongoDB
