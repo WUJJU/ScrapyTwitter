@@ -19,7 +19,7 @@ SPLASH_URL = 'http://你的ip:8050'
 
 
 
-#3. command run:
+3. command run:
 cd 到最外层文件下
 scrapy   crawl spider文件名 -o out.json -t json
 
