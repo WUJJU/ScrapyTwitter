@@ -47,12 +47,12 @@ class MySpider(scrapy.Spider):
     def parse(self, response): 
         sel=Selector(response)
         item=SplashtryItem()
-    
+        items=[]   
         item['tweets']=sel.xpath('//div[@class="js-tweet-text-container"]/p/text()').extract()
-        item['location']=sel.xpath('//span[@class="ProfileHeaderCard-locationText u-dir"]').extract()
-        item['birth']=sel.xpath('//span[@class="ProfileHeaderCard-birthdateText u-dir"]').extract()
+        item['location']=sel.xpath('//span[@class="ProfileHeaderCard-locationText u-dir"]/text()').extract()
+        item['birth']=sel.xpath('//span[@class="ProfileHeaderCard-birthdateText u-dir"]/text()').extract()
         item['name'] = sel.xpath('//title/text()').extract() 
- 
-        return item
+        items.append(item)
+        return items
 
 
