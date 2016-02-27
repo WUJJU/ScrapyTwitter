@@ -7,6 +7,7 @@ Crawling twitter info Using Scrapy+Splash
     
 查看ip:docker-machine ls
 然后打开浏览器 输入 Ip:8050,看到splash 网页，就可以运行spider。
+
 -----------------------------------------------------------------------------------
 
 在setting 文件之中，添加配置，才能在scarpy中运行，splash爬动态网页
