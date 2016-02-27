@@ -1,6 +1,6 @@
 # ScrapyTwitter
 Crawling twitter info Using Scrapy+Splash
-
+ddddd
 1.安装docker。mac 不能直接操作docker demaon, 要装 boot2docker
 command run: docker run -it -p 8050:8050 scrapinghub/splash --max-timeout 3600
 查看ip: docker-machine ls
