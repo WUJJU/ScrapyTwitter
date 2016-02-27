@@ -30,12 +30,12 @@ scrapy   crawl spider文件名 -o out.json -t json
 1. install scrapy-mongodb 
 2. change settings file:
 
-    ITEM_PIPELINES = [
-    'scrapy_mongodb.MongoDBPipeline',
-    ]
+           ITEM_PIPELINES = [
+           'scrapy_mongodb.MongoDBPipeline',
+          ]
        
-    MONGODB_URI = 'mongodb://localhost:27017'
-    MONGODB_DATABASE = 'scrapy'
-    MONGODB_COLLECTION = 'my_items'
+           MONGODB_URI = 'mongodb://localhost:27017'
+            MONGODB_DATABASE = 'scrapy'
+           MONGODB_COLLECTION = 'my_items'
 
 3. off course, you need install MongoDB, create table
